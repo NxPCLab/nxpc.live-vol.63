@@ -8,6 +8,4 @@ NxPC.Live vol.63 Event Page
 - cobaltinnv
 
 ## requirements
-- A-Frame (v1.4.2)
-    - Download "aframe-1.4.2.zip" from https://github.com/aframevr/aframe/releases/tag/v1.4.2
-    - Unzip the file and put it on "nxpc.live-vol.63/"
+- model-viewer (v3.1.1)
