@@ -6,3 +6,6 @@ NxPC.Live vol.63 Event Page
 - braven
 - tokubo
 - cobaltinnv
+
+## requirements
+- model-viewer (v3.1.1)
