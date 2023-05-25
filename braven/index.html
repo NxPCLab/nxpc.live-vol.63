@@ -46,13 +46,13 @@
         window.onload = () => {
             const nav = document.querySelector('.nav-links')
             nav.style.position = "absolute";
-            nav.style.top = "calc(100vh - " + (-window.scrollY + 60) + "px)";
+            nav.style.top = "calc(100vh + " + (window.scrollY - 80) + "px)";
         }
 
         window.onscroll = () => {
             const nav = document.querySelector('.nav-links')
             nav.style.position = "absolute";
-            nav.style.top = "calc(100vh - " + (-window.scrollY + 60) + "px)";
+            nav.style.top = "calc(100vh + " + (window.scrollY - 80) + "px)";
         }
     </script>
 
