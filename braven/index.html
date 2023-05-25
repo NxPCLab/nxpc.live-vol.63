@@ -5,58 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>クラブイベント</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=DotGothic16&family=Nanum+Myeongjo&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="left-content">
-        <div class="logo">
-            <svg>
-                <!-- ロゴのSVGコードをここに入力 -->
-            </svg>
-            <h1>クラブイベント</h1>
+
+    <div class="key-visual">
+        <span id="issue-text">NxPC Vol.63 「ハードピア(Hardpia)」</span>
+        <div id="video-area">
+            <video class="bg-video" poster="" webkit-playsinline playsinline muted autoplay loop>
+                <source src="data/vid/TDMovieOut.0.mp4" type="video/mp4">
+                <p>動画を再生できる環境ではありません。</p>
+            </video>
         </div>
-    </header>
-    <div class="nav-links">
-        <nav>
-            <ul>
-                <a href="#about">About</a>
-                <a href="#performer">Performer</a>
-                <a href="#timetable">Timetable</a>
-                <a href="#information">Information</a>
-        </nav>
     </div>
 
-    <main>
-        <div class="center-content">
-            <section id="about">
-                <h2>About</h2>
-                <!-- Aboutセクションのコンテンツをここに追加 -->
-                <p class="para">
-                    NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によってもたらされる場の臨場感を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。
-                    <br><br>
-                    現代のメディア体験において必要とされる対話性、参加性をデバイス、インタフェース、ネットワークといったメディアテクノロジーを駆使することで、音楽体験を拡張し、音楽空間におけるコミュニケーションを次のステージへ導くための研究開発、イベントを実施しています。実験の場としてのイベントNxPC.Liveを中心に、レクチャーやワークショップ、ネットラジオなどの活動を行っています。
-                </p>
-    
-            </section>
-            <section id="performer">
-                <h2>Performer</h2>
-                <!-- Performerセクションのコンテンツをここに追加 -->
-            </section>
-        </div>
-        <div class="right-content">
-            <section id="timetable">
-                <h2>Timetable</h2>
-                <!-- Timetableセクションのコンテンツをここに追加 -->
-            </section>
-            <section id="information">
-                <h2>Information</h2>
-                <!-- Informationセクションのコンテンツをここに追加 -->
-            </section>
-        </div>
-        
-    </main>
+    <nav class="nav-links">
+        <ul>
+            <a class="nav-elem" href="#about">About</a>
+            <a class="nav-elem" href="#performer">Performer</a>
+            <a class="nav-elem" href="#timetable">Timetable</a>
+            <a class="nav-elem" href="#information">Information</a>
+            <a class="nav-elem" href="#top" id="goto-top" >Top
+                <script>
+                    const toTop = document.querySelector("#goto-top");
+                    toTop.addEventListener("click", () => {
+                        window.scrollTo(0,0);
+                    })
+                </script>
+            </a>
+        </ul>
+    </nav>
+    <script>
+        window.onload = () => {
+            const nav = document.querySelector('.nav-links')
+            nav.style.position = "absolute";
+            nav.style.top = "calc(100vh - " + (-window.scrollY + 60) + "px)";
+        }
+
+        window.onscroll = () => {
+            const nav = document.querySelector('.nav-links')
+            nav.style.position = "absolute";
+            nav.style.top = "calc(100vh - " + (-window.scrollY + 60) + "px)";
+        }
+    </script>
+
+
+    <div id="about" class="section">
+        <h2>About</h2>
+        <br><br>
+        <!-- Aboutセクションのコンテンツをここに追加 -->
+        <p class="para">
+            NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によってもたらされる場の臨場感を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。
+            <br><br>
+            現代のメディア体験において必要とされる対話性、参加性をデバイス、インタフェース、ネットワークといったメディアテクノロジーを駆使することで、音楽体験を拡張し、音楽空間におけるコミュニケーションを次のステージへ導くための研究開発、イベントを実施しています。実験の場としてのイベントNxPC.Liveを中心に、レクチャーやワークショップ、ネットラジオなどの活動を行っています。
+        </p>
+
+    </div>
+    <div id="performer" class="section">
+        <h2>Performer</h2>
+        <!-- Performerセクションのコンテンツをここに追加 -->
+    </div>
+    <div id="timetable" class="sp section">
+        <h2>Timetable</h2>
+        <!-- Timetableセクションのコンテンツをここに追加 -->
+    </div>
+    <div id="information" class="sp section">
+        <h2>Information</h2>
+        <!-- Informationセクションのコンテンツをここに追加 -->
+    </div>
+
 </body>
 
 </html>

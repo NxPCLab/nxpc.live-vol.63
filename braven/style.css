@@ -1,47 +1,109 @@
-@media (min-width: 768px) {
-    body {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-      padding: 20px;
-    }
-  
-    section {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-  
-    #about,
-    #performer {
-      display: none;
-    }
-  
-    #about.mobile,
-    #performer.mobile {
-      display: block;
-    }
-  
-    #about.mobile h2,
-    #performer.mobile h2 {
-      display: none;
-    }
-  
-    #about.mobile .content,
-    #performer.mobile .content {
-      width: 100%;
-      max-width: none;
-      margin: 0;
-    }
+/* モバイルビュー */
+
+@media (max-width: 767px) {
+
+  /*header設定*/
+  .key-visual {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    background-color: #67C62D;
   }
-  
-  /* モバイルビュー */
-  @media (max-width: 767px) {
-    body {
-      padding: 20px;
-    }
-  
-    section {
-      margin-bottom: 40px;
-    }
+
+  body {
+    background-color: #67C62D;
   }
+
+  #issue-text{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14pt;
+    font-weight: 400;
+    background-color: white;
+    display: inline;
+    z-index: 0;
+    position: absolute;
+    top: 3%;
+    right: 0%;
+  }
+
+  #video-area {
+    overflow: hidden;
+  }
+
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+  }
+
+  .section {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-bottom: 20px;
+    padding: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h2 {
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 900;
+    font-size: 30pt;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+    display: inline;
+  }
+
+  p {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: white;
+    display: inline;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0%;
+    left: 15%;
+  }
+
+  a {
+    font-family: 'Chivo Mono', monospace;
+    color: white;
+    font-size: 16pt;
+    text-align: left;
+    display: flex;
+    flex-basis: content;
+    flex-wrap: wrap;
+    float: inline-end;
+    overflow-x: auto;
+    display: inline;
+
+    background-color: darkslategray;
+  }
+
+  .nav-links {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    z-index: 1;
+    top: calc(100vh - 10%);
+    left: 0;
+    right: 0%;
+  }
+
+  .nav-elem {
+    top: 0;
+    left: 0;
+  }
+}
