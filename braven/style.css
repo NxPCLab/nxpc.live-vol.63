@@ -1,6 +1,5 @@
 /* モバイルビュー */
 
-@media (max-width: 767px) {
 
   /*header設定*/
   .key-visual {
@@ -23,7 +22,9 @@
     font-weight: 400;
     background-color: white;
     display: inline;
-    z-index: 0;
+    padding-left: 0px;
+    padding-right: 40px;
+    z-index: 1;
     position: absolute;
     top: 3%;
     right: 0%;
@@ -41,15 +42,17 @@
     width: 100vw;
   }
 
-  .section {
+  .sp-section {
     position: relative;
     top: 0%;
     left: 0%;
+    max-width: 767px;
     margin-bottom: 20px;
     padding: 5%;
     padding-left: 20px;
     padding-right: 20px;
   }
+
 
   h2 {
     font-family: 'Chivo Mono', monospace;
@@ -73,8 +76,8 @@
     padding: 0;
     overflow: hidden;
     position: absolute;
-    right: 0%;
-    left: 15%;
+    margin-left: 5%;
+    right: 5%;
   }
 
   a {
@@ -106,4 +109,3 @@
     top: 0;
     left: 0;
   }
-}
