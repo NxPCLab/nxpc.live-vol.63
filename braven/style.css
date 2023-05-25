@@ -1,0 +1,47 @@
+@media (min-width: 768px) {
+    body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    section {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    #about,
+    #performer {
+      display: none;
+    }
+  
+    #about.mobile,
+    #performer.mobile {
+      display: block;
+    }
+  
+    #about.mobile h2,
+    #performer.mobile h2 {
+      display: none;
+    }
+  
+    #about.mobile .content,
+    #performer.mobile .content {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
+  }
+  
+  /* モバイルビュー */
+  @media (max-width: 767px) {
+    body {
+      padding: 20px;
+    }
+  
+    section {
+      margin-bottom: 40px;
+    }
+  }
