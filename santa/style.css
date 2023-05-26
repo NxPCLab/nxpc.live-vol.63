@@ -12,6 +12,39 @@
     }
 }
 
-h1 {
-    animation: blink 1s infinite;
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    width: 32%;
+    background: #f9c;
+    overflow-y: hidden;
+}
+
+.center {
+    width: 36%;
+    background: rgb(255, 255, 255);
+    overflow-y: auto;
+}
+
+model-viewer {
+    width: 90%;
+    height: 340px;
+    background-color: greenyellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    flex: 1;
+    width: 32%;
+    background: #9cf;
+    overflow-y: hidden;
 }
