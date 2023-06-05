@@ -16,6 +16,16 @@
     background-color: #67C62D;
   }
 
+  h1, h2, h3, h4{
+    background-color: white;
+    display: inline;
+  }
+
+  p, span{
+    background-color: white;
+    display: block;
+  }
+
   #issue-text{
     font-family: 'Nanum Myeongjo', serif;
     font-size: 14pt;
@@ -53,6 +63,23 @@
     padding-right: 20px;
   }
 
+  .performer-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+
+  }
+
+  .performer-frame {
+    display:block
+  }
+
+  h3 {
+    font-family: 'Chivo Mono', monospace;
+    font-weight: 900;
+    font-size: 20pt;
+  }
 
   h2 {
     font-family: 'Chivo Mono', monospace;
@@ -60,14 +87,10 @@
     font-size: 30pt;
     padding: 0%;
     margin: 0%;
-    background-color: white;
-    display: inline;
   }
 
   p {
     font-family: 'DotGothic16', sans-serif;
-    background-color: white;
-    display: inline;
   }
 
   ul {
@@ -91,7 +114,6 @@
     float: inline-end;
     overflow-x: auto;
     display: inline;
-
     background-color: darkslategray;
   }
 
