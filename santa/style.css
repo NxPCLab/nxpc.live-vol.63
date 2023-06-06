@@ -1,21 +1,19 @@
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+@font-face {
+    font-family: PixelMplus12 Bold;
+    src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus12-Bold_web.woff2') format("woff2");
 }
+
+@font-face {
+    font-family: PixelMplus12 Regular;
+    src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus12-Regular_web.woff2') format("woff2");
+}
+
 
 body {
     margin: 0;
     height: 100vh;
     overscroll-behavior: none;
+    font-family: PixelMplus12 Regular;
 }
 
 .container {
@@ -25,8 +23,10 @@ body {
 
 .left {
     width: 32%;
-    background: rgb(253, 28, 77);
+    background: #05ff00;
     overflow-y: hidden;
+    color: #fff;
+    font-family: PixelMplus12 Bold;
 }
 
 .logo {
@@ -40,7 +40,9 @@ body {
 
 }
 
-.info {}
+.info p {
+    font-size: 1rem;
+}
 
 .time-table table,
 .time-table td {
@@ -55,9 +57,42 @@ body {
     overflow-y: auto;
 }
 
+.center h2,
+.center h3,
+.center p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.center h2,
+.center h3 {
+    font-family: PixelMplus12 Bold;
+}
+
+.center h2 {
+    margin-bottom: 2.5rem;
+}
+
+.center .about p {
+    font-family: PixelMplus12 Regular;
+    margin-bottom: 2.5rem;
+}
+
+.center .performers h3 {
+    font-family: PixelMplus12 Regular;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.center .performers p {
+    font-family: PixelMplus12 Regular;
+    margin-bottom: 2rem;
+    font-family: PixelMplus12 Bold;
+}
+
 model-viewer {
     width: 90%;
-    height: 340px;
+    height: 400px;
     background-color: rgb(255, 255, 255, 0);
     margin-left: auto;
     margin-right: auto;
@@ -65,12 +100,33 @@ model-viewer {
 
 
 #electric-catfish {
-    background-image: url(../img/santa.png);
+    background-image: url(../img/logo.png);
 }
+
+#zeikin {
+    background-image: url(../img/logo.png);
+}
+
+#makt {
+    background-image: url(../img/logo.png);
+}
+
+#hitsuji {
+    background-image: url(../img/logo.png);
+}
+
+#mio-matsui {
+    background-image: url(../img/logo.png);
+}
+
+#snp {
+    background-image: url(../img/logo.png);
+}
+
 
 .right {
     flex: 1;
     width: 32%;
-    background: rgb(11, 97, 255);
+    background: #05ff00;
     overflow-y: hidden;
 }
