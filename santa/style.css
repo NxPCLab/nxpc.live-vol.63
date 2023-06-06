@@ -24,32 +24,37 @@ body {
 
 .left {
     width: 32%;
-    background: #05ff00;
+    background: #05FF00;
     overflow-y: hidden;
-    color: #fff;
+    color: #000;
     font-family: PixelMplus12 Bold;
+    text-align: center;
+}
+
+.left h2 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.left p {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background-color: #fff;
+    display: inline-block;
 }
 
 .logo {
     text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 3.125rem;
 }
 
 .logo img {
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     object-fit: contain;
-
-}
-
-.info p {
-    font-size: 1rem;
-}
-
-.time-table table,
-.time-table td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
 }
 
 .center {
@@ -61,8 +66,8 @@ body {
 .center h2,
 .center h3,
 .center p {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
 }
 
 .center h2,
@@ -71,28 +76,36 @@ body {
 }
 
 .center h2 {
-    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 1.625rem;
+    color: #0035FF;
+}
+
+.center .about {
+    margin-bottom: 18rem;
 }
 
 .center .about p {
     font-family: PixelMplus12 Regular;
-    margin-bottom: 2.5rem;
+    margin-bottom: 8.755rem;
 }
 
 .center .performers h3 {
     font-family: PixelMplus12 Regular;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .center .performers p {
-    font-family: PixelMplus12 Regular;
-    margin-bottom: 2rem;
     font-family: PixelMplus12 Bold;
+    text-align: center;
+    margin-bottom: 8.755rem;
 }
 
 model-viewer {
-    width: 90%;
+    width: 85%;
     background-color: rgb(255, 255, 255, 0);
     margin-left: auto;
     margin-right: auto;
@@ -101,28 +114,53 @@ model-viewer {
 
 #electric-catfish {
     background-image: url(../img/logo.png);
+    background-size: cover;
 }
 
 #zeikin {
     background-image: url(../img/logo.png);
+    background-size: cover;
 }
 
 #makt {
     background-image: url(../img/logo.png);
+    background-size: cover;
 }
 
 #hitsuji {
     background-image: url(../img/logo.png);
+    background-size: cover;
 }
 
 #mio-matsui {
     background-image: url(../img/logo.png);
+    background-size: cover;
 }
 
 #snp {
     background-image: url(../img/logo.png);
+    background-size: cover;
 }
 
+#ifTrue {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+.credit {
+    background-color: #05FF00;
+    height: 100%;
+}
+
+.credit p {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 23.75rem;
+    background-color: #fff;
+    display: inline-block;
+    color: #0035FF;
+    background-color: #05FF00;
+}
 
 .right {
     flex: 1;
