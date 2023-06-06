@@ -1,21 +1,20 @@
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+@font-face {
+    font-family: PixelMplus12 Bold;
+    src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus12-Bold_web.woff2') format("woff2");
 }
+
+@font-face {
+    font-family: PixelMplus12 Regular;
+    src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus12-Regular_web.woff2') format("woff2");
+}
+
 
 body {
     margin: 0;
     height: 100vh;
     overscroll-behavior: none;
+    font-family: PixelMplus12 Regular;
+    font-size: 16px;
 }
 
 .container {
@@ -25,8 +24,37 @@ body {
 
 .left {
     width: 32%;
-    background: rgb(253, 28, 77);
+    background: #05FF00;
     overflow-y: hidden;
+    color: #000;
+    font-family: PixelMplus12 Bold;
+    text-align: center;
+}
+
+.left h2 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.left p {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 3.125rem;
+}
+
+.logo img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
 }
 
 .center {
@@ -35,17 +63,108 @@ body {
     overflow-y: auto;
 }
 
+.center h2,
+.center h3,
+.center p {
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+}
+
+.center h2,
+.center h3 {
+    font-family: PixelMplus12 Bold;
+}
+
+.center h2 {
+    font-size: 3rem;
+    margin-bottom: 1.625rem;
+    color: #0035FF;
+}
+
+.center .about {
+    margin-bottom: 18rem;
+}
+
+.center .about p {
+    font-family: PixelMplus12 Regular;
+    margin-bottom: 8.755rem;
+}
+
+.center .performers h3 {
+    font-family: PixelMplus12 Regular;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.center .performers p {
+    font-family: PixelMplus12 Bold;
+    text-align: center;
+    margin-bottom: 8.755rem;
+}
+
 model-viewer {
-    width: 90%;
-    height: 340px;
-    background-color: rgb(95, 255, 47);
+    width: 85%;
+    background-color: rgb(255, 255, 255, 0);
     margin-left: auto;
     margin-right: auto;
+}
+
+
+#electric-catfish {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+#zeikin {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+#makt {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+#hitsuji {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+#mio-matsui {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+#snp {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+#ifTrue {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+.credit {
+    background-color: #05FF00;
+    height: 100%;
+}
+
+.credit p {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 23.75rem;
+    background-color: #fff;
+    display: inline-block;
+    color: #0035FF;
+    background-color: #05FF00;
 }
 
 .right {
     flex: 1;
     width: 32%;
-    background: rgb(11, 97, 255);
+    background: #05ff00;
     overflow-y: hidden;
 }
