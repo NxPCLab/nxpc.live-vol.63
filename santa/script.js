@@ -1,15 +1,17 @@
 window.addEventListener('load', (event) => {
-  let windowWidth = window.innerWidth;
-  let width = windowWidth * 0.36 * 0.9;
-  let modelViewer = document.querySelector('model-viewer');
+  let modelViewer = document.querySelectorAll('model-viewer');
+  let width = modelViewer[0].offsetWidth;
 
-  modelViewer.style.height = width + 'px';
+  for (let i = 0; i < modelViewer.length; i++) {
+    modelViewer[i].style.height = width + 'px';
+  }
 });
 
 window.addEventListener("resize", function () {
-  let windowWidth = window.innerWidth;
-  let width = windowWidth * 0.36 * 0.9;
-  let modelViewer = document.querySelector('model-viewer');
+  let modelViewer = document.querySelectorAll('model-viewer');
+  let width = modelViewer[0].offsetWidth;
 
-  modelViewer.style.height = width + 'px';
+  for (let i = 0; i < modelViewer.length; i++) {
+    modelViewer[i].style.height = width + 'px';
+  }
 });
