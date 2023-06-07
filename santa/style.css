@@ -125,14 +125,22 @@ img {
     background-color: #fff;
 }
 
+.center .about h2 {
+    padding-top: 15rem;
+    position: relative;
+}
+
+.center .sticker-about img {
+    position: absolute;
+    top: 112vh;
+    left: 42vw;
+    z-index: 0;
+}
+
 .logo img {
     width: 100px;
     height: 100px;
     margin-bottom: 1.25rem;
-}
-
-.center .about h2 {
-    padding-top: 15rem;
 }
 
 .center .about p {
@@ -148,9 +156,17 @@ img {
 }
 
 .center .performers h2 {
+    position: relative;
     text-align: right;
     margin-top: 0%;
     margin-bottom: 2.625rem;
+}
+
+.center .sticker-performers img {
+    position: absolute;
+    top: 187vh;
+    left: 27vw;
+    z-index: 0;
 }
 
 .center .performers h3 {
