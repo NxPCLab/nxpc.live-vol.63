@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>クラブイベント</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=DotGothic16&family=Nanum+Myeongjo&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=DotGothic16&family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <div class="key-visual">
-        <span id="issue-text">NxPC Vol.63 「ハードピア(Hardpia)」</span>
-        <div id="video-area">
-            <video class="bg-video" poster="" webkit-playsinline playsinline muted autoplay loop>
-                <source src="data/vid/TDMovieOut.0.mp4" type="video/mp4">
-                <p>動画を再生できる環境ではありません。</p>
-            </video>
-        </div>
+      <span id="issue-text">NxPC Vol.63 「ハードピア(Hardpia)」</span>
+      <div id="video-area">
+        <video
+          class="bg-video"
+          poster=""
+          webkit-playsinline
+          playsinline
+          muted
+          autoplay
+          loop
+        >
+          <source src="data/vid/TDMovieOut.0.mp4" type="video/mp4" />
+          <p>動画を再生できる環境ではありません。</p>
+        </video>
+      </div>
     </div>
 
     <nav class="nav-links">
-        <ul>
-            <a class="nav-elem" href="#about">About</a>
-            <a class="nav-elem" href="#performer">Performer</a>
-            <a class="nav-elem" href="#timetable">Timetable</a>
-            <a class="nav-elem" href="#information">Information</a>
-            <a class="nav-elem" href="#top" id="goto-top" >Top
-                <script>
-                    const toTop = document.querySelector("#goto-top");
-                    toTop.addEventListener("click", () => {
-                        window.scrollTo(0,0);
-                    })
-                </script>
-            </a>
-        </ul>
+      <ul>
+        <a class="nav-elem" href="#about">About</a>
+        <a class="nav-elem" href="#performer">Performer</a>
+        <a class="nav-elem" href="#timetable">Timetable</a>
+        <a class="nav-elem" href="#information">Information</a>
+        <a class="nav-elem" href="#top" id="goto-top"
+          >Top
+          <script>
+            const toTop = document.querySelector("#goto-top");
+            toTop.addEventListener("click", () => {
+              window.scrollTo(0, 0);
+            });
+          </script>
+        </a>
+      </ul>
     </nav>
     <script>
-        window.onload = () => {
-            const nav = document.querySelector('.nav-links')
-            nav.style.position = "absolute";
-            nav.style.top = "calc(100vh + " + (window.scrollY - 80) + "px)";
-        }
+      window.onload = () => {
+        const nav = document.querySelector(".nav-links");
+        nav.style.position = "absolute";
+        nav.style.top = "calc(100vh + " + (window.scrollY - 80) + "px)";
+      };
 
-        window.onscroll = () => {
-            const nav = document.querySelector('.nav-links')
-            nav.style.position = "absolute";
-            nav.style.top = "calc(100vh + " + (window.scrollY - 80) + "px)";
-        }
+      window.onscroll = () => {
+        const nav = document.querySelector(".nav-links");
+        nav.style.position = "absolute";
+        nav.style.top = "calc(100vh + " + (window.scrollY - 80) + "px)";
+      };
     </script>
 
-
     <div id="about" class="sp-section">
-        <h2>About</h2>
-        <br><br>
-        <!-- Aboutセクションのコンテンツをここに追加 -->
-        <p class="para">
-            NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によってもたらされる場の臨場感を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。
-            <br><br>
-            現代のメディア体験において必要とされる対話性、参加性をデバイス、インタフェース、ネットワークといったメディアテクノロジーを駆使することで、音楽体験を拡張し、音楽空間におけるコミュニケーションを次のステージへ導くための研究開発、イベントを実施しています。実験の場としてのイベントNxPC.Liveを中心に、レクチャーやワークショップ、ネットラジオなどの活動を行っています。
-        </p>
-
+      <h2>About</h2>
+      <br /><br />
+      <!-- Aboutセクションのコンテンツをここに追加 -->
+      <p class="para">
+        NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によってもたらされる場の臨場感を拡大し、ネットへも拡散させるためのメディアテクノロジーの実現を目指した研究機関です。
+        <br /><br />
+        現代のメディア体験において必要とされる対話性、参加性をデバイス、インタフェース、ネットワークといったメディアテクノロジーを駆使することで、音楽体験を拡張し、音楽空間におけるコミュニケーションを次のステージへ導くための研究開発、イベントを実施しています。実験の場としてのイベントNxPC.Liveを中心に、レクチャーやワークショップ、ネットラジオなどの活動を行っています。
+      </p>
     </div>
     <div id="performer" class="sp-section">
-        <h2>Performer</h2>
-        <!-- Performerセクションのコンテンツをここに追加 -->
+      <h2>Performer</h2>
+      <!-- Performerセクションのコンテンツをここに追加 -->
+      <model-viewer
+        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+        src="../model/electric_catfish_v1.glb"
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+      >
+      </model-viewer>
+      <model-viewer
+        alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+        src="../model/zeikin.glb"
+        ar
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+      >
+      </model-viewer>
     </div>
     <div id="timetable" class="sp-section">
-        <h2>Timetable</h2>
-        <!-- Timetableセクションのコンテンツをここに追加 -->
+      <h2>Timetable</h2>
+      <!-- Timetableセクションのコンテンツをここに追加 -->
     </div>
     <div id="information" class="sp-section">
-        <h2>Information</h2>
-        <!-- Informationセクションのコンテンツをここに追加 -->
+      <h2>Information</h2>
+      <!-- Informationセクションのコンテンツをここに追加 -->
     </div>
-
-</body>
-
+  </body>
 </html>
