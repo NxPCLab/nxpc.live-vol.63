@@ -23,6 +23,44 @@ body {
     overflow-x: hidden;
 }
 
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading {
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: PixelMplus12 Bold;
+    font-size: 1.5rem;
+}
+
+.loading.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms;
+}
+
+.loading p {
+    animation: blink 150ms infinite;
+}
+
 .container {
     height: 100%;
 }
@@ -33,6 +71,8 @@ body {
     background-color: #0035FF;
     height: 1.5rem;
     position: fixed;
+    z-index: 999;
+    /* ここ相談 */
 }
 
 .scrolling-text {
@@ -128,12 +168,11 @@ img {
 .center .about h2 {
     padding-top: 15rem;
     position: relative;
+    display: inline-block;
 }
 
 .center .sticker-about img {
     position: absolute;
-    top: 112vh;
-    left: 42vw;
     z-index: 0;
 }
 
@@ -153,11 +192,12 @@ img {
     background-color: #ffffff;
     width: 36vw;
     margin-left: 31.5vw;
+    text-align: right;
 }
 
 .center .performers h2 {
+    display: inline-block;
     position: relative;
-    text-align: right;
     margin-top: 0%;
     margin-bottom: 2.625rem;
 }
