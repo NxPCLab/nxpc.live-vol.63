@@ -60,15 +60,14 @@ body {
 }
 
 .center {
-    width: 36%;
+    width: 100vh;
     position: relative;
     z-index: 2;
     display: block;
-    margin-left: 32%;
 }
 
 .center .visual model-viewer {
-    width: 100.1%;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -95,6 +94,8 @@ img {
 }
 
 .center .about {
+    width: 33vw;
+    margin-left: 33vw;
     padding-bottom: 18rem;
     background-color: #fff;
 }
@@ -117,6 +118,8 @@ img {
 
 .center .performers {
     background-color: #ffffff;
+    width: 33vw;
+    margin-left: 33vw;
 }
 
 .center .performers h2 {
@@ -185,6 +188,8 @@ model-viewer {
     height: 100vh;
     display: grid;
     place-items: center;
+    width: 33vw;
+    margin-left: 33vw;
 }
 
 .center .credit p {
