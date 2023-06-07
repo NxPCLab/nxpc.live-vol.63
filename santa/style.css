@@ -8,7 +8,6 @@
     src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus12-Regular_web.woff2') format("woff2");
 }
 
-
 body {
     margin: 0;
     height: 100vh;
@@ -21,10 +20,37 @@ body {
     background-position-y: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 .container {
     height: 100%;
+}
+
+.scrolling-container {
+    width: 100vw;
+    overflow: hidden;
+    background-color: #0035FF;
+    height: 1.5rem;
+    position: fixed;
+}
+
+.scrolling-text {
+    color: #fff;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+    font-size: 1.25rem;
+    margin: 0%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .left {
@@ -87,13 +113,14 @@ img {
 
 .center h2 {
     font-size: 3rem;
+    margin-top: 0;
     margin-bottom: 1.25rem;
     color: #0035FF;
 }
 
 .center .about {
-    width: 33vw;
-    margin-left: 33vw;
+    width: 36vw;
+    margin-left: 31.5vw;
     padding-bottom: 18rem;
     background-color: #fff;
 }
@@ -116,8 +143,8 @@ img {
 
 .center .performers {
     background-color: #ffffff;
-    width: 33vw;
-    margin-left: 33vw;
+    width: 36vw;
+    margin-left: 31.5vw;
 }
 
 .center .performers h2 {
@@ -186,8 +213,8 @@ model-viewer {
     height: 100vh;
     display: grid;
     place-items: center;
-    width: 33vw;
-    margin-left: 33vw;
+    width: 36vw;
+    margin-left: 31.5vw;
 }
 
 .center .credit p {
