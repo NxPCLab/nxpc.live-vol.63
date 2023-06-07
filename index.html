@@ -9,6 +9,10 @@
 </head>
 
 <body>
+  <div class="loading">
+    <p>NxPC Vol.63 HADRPIA
+      loading...</p>
+  </div>
   <div class="container desktop">
     <div class="left desktop">
       <div class="info">
@@ -39,7 +43,7 @@
 
       <div class="visual">
         <model-viewer id="key-visual" alt="key visual" src="./model/main.glb" shadow-intensity="1" camera-controls
-          touch-action="pan-y" auto-rotate environment-image="./img/kloppenheim_02_4k.hdr">
+          touch-action="pan-y" auto-rotate environment-image="./img/kloppenheim_02_4k.hdr" loading="eager">
         </model-viewer>
       </div>
 
@@ -49,10 +53,10 @@
         </p>
       </div>
 
+      <div class="sticker-about">
+        <img src="./img/about.png" alt="about">
+      </div>
       <div class=" about">
-        <div class="sticker-about">
-          <img src="./img/about.png" alt="about">
-        </div>
         <h2>
           NxPCとは？
         </h2>
@@ -64,57 +68,50 @@
         </p>
       </div>
 
+      <div class="sticker-performers">
+        <img src="./img/performers.png" alt="about">
+      </div>
       <div class="performers">
-        <div class="sticker-performers">
-          <img src="./img/performers.png" alt="about">
-        </div>
         <h2>PERFORMER</h2>
-        <model-viewer id="electric-catfish"
-          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-          src="./model/electric_catfish.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y" auto-rotate>
+        <model-viewer id="electric-catfish" alt="electric-catfish" src="./model/electric_catfish.glb" ar
+          shadow-intensity="1" camera-controls touch-action="pan-y" auto-rotate loading="eager">
         </model-viewer>
 
         <h3>electric catfish</h3>
         <p>BravenとSantaが電磁波を愛でます。</p>
 
-        <model-viewer id="zeikin"
-          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-          src="./model/zeikin.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y" auto-rotate>
+        <model-viewer id="zeikin" alt="税金泥棒" src="./model/zeikin.glb" ar shadow-intensity="1" camera-controls
+          touch-action="pan-y" auto-rotate loading="eager">
         </model-viewer>
         <h3>税金操作</h3>
         <p>一週間後で、大雨の中、高速道路で時速170kmの車に轢かれた配達員を発見しました。</p>
 
-        <model-viewer id="makt"
-          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-          src="./model/makt.glb" shadow-intensity="1" camera-controls touch-action="pan-y" auto-rotate>
+        <model-viewer id="makt" alt="マクト" src="./model/makt.glb" shadow-intensity="1" camera-controls
+          touch-action="pan-y" auto-rotate loading="eager">
         </model-viewer>
         <h3>マクト</h3>
         <p>hogehogehoge</p>
 
-        <model-viewer id="hitsuji"
-          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-          src="./model/hitsujikai.glb" shadow-intensity="1" camera-controls touch-action="pan-y" auto-rotate>
+        <model-viewer id="hitsuji" alt="histujikai" src="./model/hitsujikai.glb" shadow-intensity="1" camera-controls
+          touch-action="pan-y" auto-rotate loading="eager">
         </model-viewer>
         <h3>hitsujikai</h3>
         <p>地球を征服します。ひつじかい。</p>
 
-        <model-viewer id="mio-matsui"
-          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-          src="./model/mio_matsui.glb" shadow-intensity="1" camera-controls touch-action="pan-y" auto-rotate>
+        <model-viewer id="mio-matsui" alt="mio-matsui" src="./model/mio_matsui.glb" shadow-intensity="1" camera-controls
+          touch-action="pan-y" auto-rotate loading="eager">
         </model-viewer>
         <h3>まついみおと愉快な仲間たち</h3>
         <p>オタマトーン。</p>
 
-        <model-viewer id="snp"
-          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-          src="./model/snp.glb" shadow-intensity="1" camera-controls touch-action="pan-y" auto-rotate>
+        <model-viewer id="snp" alt="Saturaday Night Party" src="./model/snp.glb" shadow-intensity="1" camera-controls
+          touch-action="pan-y" auto-rotate loading="eager">
         </model-viewer>
         <h3>Saturaday Night Party</h3>
         <p>夜は終わらない。</p>
 
-        <model-viewer id="ifTrue"
-          alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-          src="./model/508_ifTrue.glb" shadow-intensity="1" camera-controls touch-action="pan-y" auto-rotate>
+        <model-viewer id="ifTrue" alt="508 ifTrue" src="./model/508_ifTrue.glb" shadow-intensity="1" camera-controls
+          touch-action="pan-y" auto-rotate loading="eager">
         </model-viewer>
         <h3>508 ifTrue</h3>
         <p>Live Coding。</p>
