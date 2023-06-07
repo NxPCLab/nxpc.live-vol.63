@@ -15,6 +15,12 @@ body {
     overscroll-behavior: none;
     font-family: PixelMplus12 Regular;
     font-size: 16px;
+    background: #05FF00;
+    background-image: url(../img/all_bg.png);
+    background-size: 100% auto;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -24,7 +30,6 @@ body {
 .left {
     height: 100vh;
     width: 32%;
-    background: #05FF00;
     overflow-y: auto;
     color: #000;
     font-family: PixelMplus12 Bold;
@@ -36,6 +41,8 @@ body {
 }
 
 .left p {
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 10px;
     margin-top: 0px;
     background-color: #fff;
@@ -54,7 +61,6 @@ body {
 
 .center {
     width: 36%;
-    background: rgb(255, 255, 255);
     position: relative;
     z-index: 2;
     display: block;
@@ -63,15 +69,11 @@ body {
 
 .center .visual model-viewer {
     width: 100.1%;
-    background-color: #05FF00;
     margin-left: auto;
     margin-right: auto;
 }
 
-#key-visual {
-    background-image: url(../img/logo.png);
-    background-size: cover;
-}
+#key-visual {}
 
 .center h2,
 .center h3,
@@ -93,7 +95,8 @@ img {
 }
 
 .center .about {
-    margin-bottom: 18rem;
+    padding-bottom: 18rem;
+    background-color: #fff;
 }
 
 .logo img {
@@ -102,14 +105,23 @@ img {
     margin-bottom: 1.25rem;
 }
 
+.center .about h2 {
+    padding-top: 15rem;
+}
+
 .center .about p {
     font-family: PixelMplus12 Regular;
     margin-top: 0%;
     margin-bottom: 8.755rem;
 }
 
+.center .performers {
+    background-color: #ffffff;
+}
+
 .center .performers h2 {
     text-align: right;
+    margin-top: 0%;
     margin-bottom: 2.625rem;
 }
 
@@ -124,14 +136,12 @@ img {
 .center .performers p {
     font-family: PixelMplus12 Regular;
     text-align: center;
-    margin-bottom: 8.755rem;
+    padding-bottom: 8.755rem;
+    margin-bottom: 0%;
 }
 
 model-viewer {
     width: 100%;
-    background-color: rgb(255, 255, 255, 0);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -170,7 +180,7 @@ model-viewer {
     background-size: cover;
 }
 
-.credit {
+.center .credit {
     background-color: #05FF00;
     height: 100vh;
     display: grid;
@@ -181,10 +191,9 @@ model-viewer {
     font-family: PixelMplus12 Regular;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 0);
     display: inline-block;
     color: #0035FF;
-    background-color: #05FF00;
     margin: 0%;
     line-height: 1.5rem;
 }
@@ -192,16 +201,15 @@ model-viewer {
 .right {
     height: 100vh;
     width: 32%;
-    background: #05ff00;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 999;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(255, 255, 255, 0);
 }
 
 .time-table {
