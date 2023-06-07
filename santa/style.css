@@ -60,7 +60,7 @@ body {
 }
 
 .center {
-    width: 100vh;
+    width: 100vw;
     position: relative;
     z-index: 2;
     display: block;
@@ -71,8 +71,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-#key-visual {}
 
 .center h2,
 .center h3,
