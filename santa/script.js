@@ -6,7 +6,7 @@ window.addEventListener('load', (event) => {
   for (let i = 1; i < modelViewer.length; i++ - 1) {
     modelViewer[i].style.height = width + 'px';
   }
-  modelViewer[0].style.height = height + 'px';
+  modelViewer[0].style.height = height - 20 + 'px';
 });
 
 window.addEventListener("resize", function () {
@@ -18,6 +18,14 @@ window.addEventListener("resize", function () {
   for (let i = 0; i < modelViewer.length; i++) {
     modelViewer[i].style.height = width + 'px';
 
-    modelViewer[0].style.height = height + 'px';
+    modelViewer[0].style.height = height - 20 + 'px';
+  }
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+  let scrollingText = document.querySelectorAll('.scrolling-text');
+  for (let i = 0; i < scrollingText.length; i++) {
+
+    scrollingText[i].style.animationDuration = (scrollingText.scrollWidth / 50) + 's';
   }
 });
