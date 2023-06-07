@@ -14,6 +14,14 @@ function getElementPosition(element) {
   return position;
 }
 
+function scrollToElement(elementId) {
+  const element = document.querySelector(elementId);
+  console.log(element);
+  if (element != null) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 window.addEventListener('DOMContentLoaded', function () {
   // x-scroll
   let scrollingText = document.querySelectorAll('.scrolling-text');
