@@ -23,6 +23,9 @@ window.addEventListener("resize", function () {
 });
 
 window.addEventListener('DOMContentLoaded', function () {
-  var scrollingText = document.querySelectorAll('.scrolling-text');
-  scrollingText.style.animationDuration = (scrollingText.scrollWidth / 50) + 's';
+  let scrollingText = document.querySelectorAll('.scrolling-text');
+  for (let i = 0; i < scrollingText.length; i++) {
+
+    scrollingText[i].style.animationDuration = (scrollingText.scrollWidth / 50) + 's';
+  }
 });
