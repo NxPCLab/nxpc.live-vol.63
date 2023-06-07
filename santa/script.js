@@ -61,9 +61,36 @@ window.addEventListener('DOMContentLoaded', function () {
     }, 1000);
     document.body.style.display = 'block';
   });
+
+  let windowWidth = window.innerWidth;
+  let desktop = document.querySelectorAll('.desktop');
+
+  if (windowWidth < 981) {
+    for (let i = 0; i < desktop.length; i++) {
+      desktop[i].style.display = 'none';
+    }
+  } else {
+    for (let i = 0; i < desktop.length; i++) {
+      desktop[i].style.display = 'block';
+    }
+  }
+
 });
 
 window.addEventListener("resize", function () {
+  let windowWidth = window.innerWidth;
+  let desktop = document.querySelectorAll('.desktop');
+
+  if (windowWidth < 981) {
+    for (let i = 0; i < desktop.length; i++) {
+      desktop[i].style.display = 'none';
+    }
+  } else {
+    for (let i = 0; i < desktop.length; i++) {
+      desktop[i].style.display = 'block';
+    }
+  }
+
   let modelViewer = document.querySelectorAll('model-viewer');
   let width = modelViewer[1].offsetWidth;
   let height = window.innerHeight;
