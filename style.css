@@ -15,7 +15,7 @@ body {
     font-family: PixelMplus12 Regular;
     font-size: 16px;
     background: #05FF00;
-    background-image: url(../img/all_bg.png);
+    background-image: url(./img/all_bg.png);
     background-size: 100% auto;
     background-position-y: center;
     background-attachment: fixed;
