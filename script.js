@@ -69,9 +69,9 @@ window.addEventListener('DOMContentLoaded', function () {
     mobileCenter('.performers');
     mobileCenter('.credit');
 
-    body.style.backgroundImage = 'url(../img/mobile_bg.png)';
+    body.style.backgroundImage = 'url(img/mobile_bg.png)';
   } else {
-    body.style.backgroundImage = 'url(../img/all_bg.png)';
+    body.style.backgroundImage = 'url(img/all_bg.png)';
     for (let i = 0; i < mobile.length; i++) {
       mobile[i].style.display = 'none';
     }
@@ -131,9 +131,9 @@ window.addEventListener("resize", function () {
     mobileCenter('.performers');
     mobileCenter('.credit');
 
-    body.style.backgroundImage = 'url(../img/mobile_bg.png)';
+    body.style.backgroundImage = 'url(img/mobile_bg.png)';
   } else {
-    body.style.backgroundImage = 'url(../img/all_bg.png)';
+    body.style.backgroundImage = 'url(img/all_bg.png)';
     for (let i = 0; i < mobile.length; i++) {
       mobile[i].style.display = 'none';
     }
