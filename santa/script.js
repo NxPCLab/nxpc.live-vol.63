@@ -14,15 +14,68 @@ function getElementPosition(element) {
   return position;
 }
 
+function mobileCenter(elementID) {
+  const element = document.querySelector(elementID);
+  if (element != null) {
+    element.style.marginLeft = '0%';
+    element.style.width = '100vw';
+  }
+}
+
+function desktopCenter(elementID) {
+  const element = document.querySelector(elementID);
+  if (element != null) {
+    element.style.marginLeft = '31.5vw';
+    element.style.width = '36vw';
+  }
+}
+
+function mobileNav(elementID) {
+  const element = document.querySelectorAll(elementID);
+  if (elementID == '.info') {
+    element[0].style.display = 'none';
+    element[1].style.display = 'flex';
+  } else if (elementID == '.time-table') {
+    element[0].style.display = 'none';
+  }
+}
+
+function desktopNav(elementID) {
+  const element = document.querySelectorAll(elementID);
+  if (elementID == '.info') {
+    element[0].style.display = 'flex';
+    element[1].style.display = 'none';
+  } else if (elementID == '.time-table') {
+    element[0].style.display = 'flex';
+  }
+}
+
 function scrollToElement(elementId) {
   const element = document.querySelector(elementId);
-  console.log(element);
   if (element != null) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
 window.addEventListener('DOMContentLoaded', function () {
+  let windowWidth = window.innerWidth;
+  let body = document.querySelector('body');
+  let mobile = document.querySelectorAll('.mobile');
+
+  if (windowWidth < 981) {
+    mobileNav('.info');
+    mobileNav('.time-table');
+    mobileCenter('.about');
+    mobileCenter('.performers');
+    mobileCenter('.credit');
+
+    body.style.backgroundImage = 'url(../img/mobile_bg.png)';
+  } else {
+    for (let i = 0; i < mobile.length; i++) {
+      mobile[i].style.display = 'none';
+    }
+  }
+
   // x-scroll
   let scrollingText = document.querySelectorAll('.scrolling-text');
   for (let i = 0; i < scrollingText.length; i++) {
@@ -61,9 +114,39 @@ window.addEventListener('DOMContentLoaded', function () {
     }, 1000);
     document.body.style.display = 'block';
   });
+
 });
 
 window.addEventListener("resize", function () {
+  let windowWidth = window.innerWidth;
+  let desktop = document.querySelectorAll('.desktop');
+  let body = document.querySelector('body');
+  let mobile = document.querySelectorAll('.mobile');
+
+  if (windowWidth < 981) {
+    mobileNav('.info');
+    mobileNav('.time-table');
+    mobileCenter('.about');
+    mobileCenter('.performers');
+    mobileCenter('.credit');
+
+    body.style.backgroundImage = 'url(../img/mobile_bg.png)';
+  } else {
+    body.style.backgroundImage = 'url(../img/all_bg.png)';
+    for (let i = 0; i < mobile.length; i++) {
+      mobile[i].style.display = 'none';
+    }
+    desktop[0].style.display = 'block';
+    desktop[1].style.display = 'block';
+    desktop[2].style.display = 'block';
+    desktop[3].style.display = 'flex';
+    desktopNav('.info');
+    desktopNav('.time-table');
+    desktopCenter('.about');
+    desktopCenter('.performers');
+    desktopCenter('.credit');
+  }
+
   let modelViewer = document.querySelectorAll('model-viewer');
   let width = modelViewer[1].offsetWidth;
   let height = window.innerHeight;
