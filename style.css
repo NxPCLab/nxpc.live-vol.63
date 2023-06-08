@@ -279,6 +279,7 @@ model-viewer {
     background-color: #05FF00;
     height: 100vh;
     display: grid;
+    place-content: center;
     place-items: center;
     width: 36vw;
     margin-left: 31.5vw;
@@ -293,6 +294,7 @@ model-viewer {
     color: #0035FF;
     margin: 0%;
     line-height: 1.5rem;
+    text-align: center;
 }
 
 .right {
