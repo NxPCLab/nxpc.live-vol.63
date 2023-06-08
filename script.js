@@ -69,11 +69,42 @@ window.addEventListener('DOMContentLoaded', function () {
     mobileCenter('.performers');
     mobileCenter('.credit');
 
+    let modelViewer = document.querySelectorAll('model-viewer');
+    for (let i = 1; i < modelViewer.length; i++) {
+      modelViewer[i].style.width = 90 + '%';
+      modelViewer[i].style.marginLeft = windowWidth * 0.05 + 'px';
+    }
+
+    let pSize = document.querySelectorAll('p');
+    for (let i = 0; i < pSize.length; i++) {
+      pSize[i].style.fontSize = 2 + 'rem';
+    }
+
+    let h3Size = document.querySelectorAll('h3');
+    for (let i = 0; i < h3Size.length; i++) {
+      h3Size[i].style.fontSize = 2 + 'rem';
+    }
+
+    let infoPSize = document.querySelectorAll('.right .info p');
+    for (let i = 0; i < infoPSize.length; i++) {
+      infoPSize[i].style.fontSize = 1.3 + 'rem';
+    }
+
+    let scrollText = document.querySelectorAll('.scrolling-text');
+    scrollText[0].style.fontSize = 1 + 'rem';
+    scrollText[1].style.fontSize = 1 + 'rem';
+
     body.style.backgroundImage = 'url(img/mobile_bg.png)';
   } else {
     body.style.backgroundImage = 'url(img/all_bg.png)';
     for (let i = 0; i < mobile.length; i++) {
       mobile[i].style.display = 'none';
+    }
+
+    let modelViewer = document.querySelectorAll('model-viewer');
+    for (let i = 1; i < modelViewer.length; i++) {
+      modelViewer[i].style.width = 36 + 'vw';;
+      modelViewer[i].style.paddingLeft = 0 + 'px';
     }
   }
 
@@ -131,6 +162,31 @@ window.addEventListener("resize", function () {
     mobileCenter('.performers');
     mobileCenter('.credit');
 
+    let modelViewer = document.querySelectorAll('model-viewer');
+    for (let i = 1; i < modelViewer.length; i++) {
+      modelViewer[i].style.width = 90 + '%';
+      modelViewer[i].style.marginLeft = windowWidth * 0.05 + 'px';
+    }
+
+    let pSize = document.querySelectorAll('p');
+    for (let i = 0; i < pSize.length; i++) {
+      pSize[i].style.fontSize = 2 + 'rem';
+    }
+
+    let h3Size = document.querySelectorAll('h3');
+    for (let i = 0; i < h3Size.length; i++) {
+      h3Size[i].style.fontSize = 2 + 'rem';
+    }
+
+    let infoPSize = document.querySelectorAll('.right .info p');
+    for (let i = 0; i < infoPSize.length; i++) {
+      infoPSize[i].style.fontSize = 1.3 + 'rem';
+    }
+
+    let scrollText = document.querySelectorAll('.scrolling-text');
+    scrollText[0].style.fontSize = 1 + 'rem';
+    scrollText[1].style.fontSize = 1 + 'rem';
+
     body.style.backgroundImage = 'url(img/mobile_bg.png)';
   } else {
     body.style.backgroundImage = 'url(img/all_bg.png)';
@@ -146,6 +202,22 @@ window.addEventListener("resize", function () {
     desktopCenter('.about');
     desktopCenter('.performers');
     desktopCenter('.credit');
+
+    let pSize = document.querySelectorAll('p');
+    for (let i = 0; i < pSize.length; i++) {
+      pSize[i].style.fontSize = 1 + 'rem';
+    }
+
+    let h3Size = document.querySelectorAll('h3');
+    for (let i = 0; i < h3Size.length; i++) {
+      h3Size[i].style.fontSize = 1 + 'rem';
+    }
+
+    let modelViewer = document.querySelectorAll('model-viewer');
+    for (let i = 1; i < modelViewer.length; i++) {
+      modelViewer[i].style.width = 36 + 'vw';
+      modelViewer[i].style.marginLeft = 0 + 'px';
+    }
   }
 
   let modelViewer = document.querySelectorAll('model-viewer');
