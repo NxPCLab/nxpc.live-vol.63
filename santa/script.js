@@ -71,6 +71,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     body.style.backgroundImage = 'url(../img/mobile_bg.png)';
   } else {
+    body.style.backgroundImage = 'url(../img/all_bg.png)';
     for (let i = 0; i < mobile.length; i++) {
       mobile[i].style.display = 'none';
     }
