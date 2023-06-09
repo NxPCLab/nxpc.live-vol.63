@@ -169,6 +169,49 @@ img {
     color: #0035FF;
 }
 
+.mobile-time-table {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding-top: 15rem;
+    padding-bottom: 0%;
+    flex-direction: column;
+}
+
+.center .mobile-time-table h2 {
+    text-align: center;
+    margin-bottom: 2.625rem;
+    position: relative;
+}
+
+.mobile-time-table .t-info {
+    margin-bottom: 1rem;
+}
+
+.mobile-time-table .t-info p {
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-family: PixelMplus12 Bold;
+}
+
+.mobile-time-table .t-table p {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 0%;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.mobile-time-table .t-table a {
+    background-color: #05FF00;
+}
+
+.sticker-time-table img {
+    position: absolute;
+    z-index: 0;
+}
+
 .center .about {
     width: 36vw;
     margin-left: 31.5vw;
@@ -246,12 +289,12 @@ model-viewer {
 }
 
 #zeikin {
-    background-image: url(./img/logo.png);
+    background-image: url(./img/zeikin.png);
     background-size: cover;
 }
 
 #makt {
-    background-image: url(./img/logo.png);
+    background-image: url(./img/makt.png);
     background-size: cover;
 }
 
@@ -261,12 +304,12 @@ model-viewer {
 }
 
 #mio-matsui {
-    background-image: url(./img/logo.png);
+    background-image: url(./img/MioMatsui.PNG);
     background-size: cover;
 }
 
 #snp {
-    background-image: url(./img/logo.png);
+    background-image: url(./img/snp.png);
     background-size: cover;
 }
 
@@ -295,6 +338,8 @@ model-viewer {
     margin: 0%;
     line-height: 1.5rem;
     text-align: center;
+    margin-bottom: 10px;
+    line-height: 2.5rem;
 }
 
 .right {

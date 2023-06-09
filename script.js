@@ -37,6 +37,8 @@ function mobileNav(elementID) {
     element[1].style.display = 'flex';
   } else if (elementID == '.time-table') {
     element[0].style.display = 'none';
+  } else if (elementID == '.mobile-time-table') {
+    element[0].style.display = 'flex';
   }
 }
 
@@ -47,6 +49,8 @@ function desktopNav(elementID) {
     element[1].style.display = 'none';
   } else if (elementID == '.time-table') {
     element[0].style.display = 'flex';
+  } else if (elementID == '.mobile-time-table') {
+    element[0].style.display = 'none';
   }
 }
 
@@ -65,6 +69,7 @@ window.addEventListener('DOMContentLoaded', function () {
   if (windowWidth < 981) {
     mobileNav('.info');
     mobileNav('.time-table');
+    mobileNav('.mobile-time-table');
     mobileCenter('.about');
     mobileCenter('.performers');
     mobileCenter('.credit');
@@ -96,6 +101,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     body.style.backgroundImage = 'url(img/mobile_bg.png)';
   } else {
+    desktopNav('.mobile-time-table');
     body.style.backgroundImage = 'url(img/all_bg.png)';
     for (let i = 0; i < mobile.length; i++) {
       mobile[i].style.display = 'none';
@@ -137,6 +143,12 @@ window.addEventListener('DOMContentLoaded', function () {
   stickerperformers.style.top = performersRect.top - 120 + 'px';
   stickerperformers.style.left = performersRect.leftP + 'px';
 
+  let timeTable = document.querySelector('.mobile-time-table h2');
+  let stickerTimeTable = document.querySelector('.sticker-time-table img');
+  let timeTableRect = getElementPosition(timeTable);
+  stickerTimeTable.style.top = timeTableRect.top - 80 + 'px';
+  stickerTimeTable.style.left = timeTableRect.right + 'px';
+
   // loading
   const loading = document.querySelector('.loading');
   const firstModelViewer = document.querySelector("model-viewer");
@@ -158,6 +170,7 @@ window.addEventListener("resize", function () {
   if (windowWidth < 981) {
     mobileNav('.info');
     mobileNav('.time-table');
+    mobileNav('.mobile-time-table');
     mobileCenter('.about');
     mobileCenter('.performers');
     mobileCenter('.credit');
@@ -199,6 +212,7 @@ window.addEventListener("resize", function () {
     desktop[3].style.display = 'flex';
     desktopNav('.info');
     desktopNav('.time-table');
+    desktopNav('.mobile-time-table');
     desktopCenter('.about');
     desktopCenter('.performers');
     desktopCenter('.credit');
@@ -241,4 +255,10 @@ window.addEventListener("resize", function () {
   let performersRect = getElementPosition(performers);
   stickerperformers.style.top = performersRect.top - 120 + 'px';
   stickerperformers.style.left = performersRect.leftP + 'px';
+
+  let timeTable = document.querySelector('.mobile-time-table h2');
+  let stickerTimeTable = document.querySelector('.sticker-time-table img');
+  let timeTableRect = getElementPosition(timeTable);
+  stickerTimeTable.style.top = timeTableRect.top - 80 + 'px';
+  stickerTimeTable.style.left = timeTableRect.right + 'px';
 });
