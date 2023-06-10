@@ -210,6 +210,8 @@ window.addEventListener("resize", function () {
     desktop[1].style.display = 'block';
     desktop[2].style.display = 'block';
     desktop[3].style.display = 'flex';
+    let stickerTimeTable = document.querySelector('.sticker-time-table img');
+    stickerTimeTable.style.display = 'none';
     desktopNav('.info');
     desktopNav('.time-table');
     desktopNav('.mobile-time-table');
